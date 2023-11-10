@@ -12,11 +12,16 @@ section {
   align-items: center;
   justify-content:flex-start;
 }
+* {
+font-family: 'Noto Serif Display', serif;
+font-family: 'Playfair Display', serif;
+}
+
 
 .home-nav {
   text-decoration: none;
   font-size: 4vw;
-  padding: 0.1rem;
+  padding: 1rem;
   color: gray;
   transition: color 2s ease-out;
 }
@@ -47,6 +52,7 @@ section {
 .icon-book-open1 .secondary {
   fill: gray; /* Change the secondary color to red */
 }
+
 
 .icon-book-open1 {
   height: 5vw

@@ -117,7 +117,10 @@ function Search(props) {
   }
 
   return (
-    <div>
+    <div className='Search'>
+      {combinedPoem && (
+        <CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>
+      )}
 <div className='search-container'>
 {modalVisible1 && selectedResult1 ? (
     <div className='poem1-block'>
@@ -131,13 +134,14 @@ function Search(props) {
     </div>
   ) : (
     poem1 ? (
-      <div className='poem1-block' onClick={() => handleSecondPoemClick(setPoem1)}>
-        <p>{poem1.title}</p>
+      <div className='poem1-block' id="selected" onClick={() => handleSecondPoemClick(setPoem1)}>
+        <p className='selected-poem-title'>{poem1.title}</p>
         <p>by</p>
-        <p>{poem1.author}</p>
+        <p className='selected-poem-author'>{poem1.author}</p>
       </div>
     ) : (
       <div className='poem1-block'>
+        <h2 className='results-header'>Search for a poem, by author or title</h2>
         <form onSubmit={handleSubmit}>
           <select value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="title">Title</option>
@@ -149,7 +153,9 @@ function Search(props) {
             onChange={(e) => setSearchInput(e.target.value)}
             placeholder="Search..."
           />
-          <button type="submit">Search</button>
+          {/* <button type="submit"> */}
+            <svg xmlns="http://www.w3.org/2000/svg" type="submit" viewBox="0 0 24 24" className="icon-search"><circle cx="10" cy="10" r="7" className="primary"/><path className="secondary" d="M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+            {/* </button> */}
         </form>
         {searchResults ? (
           searchResults.length > 0 ? (
@@ -158,9 +164,11 @@ function Search(props) {
               <div className='search-results'>
                 {searchResults.map((result, index) => (
                   <div key={index} className='results'>
-                    <p className="result-name" onClick={() => handlePoemClick(setPoem1, index)}>{result.title} by {result.author}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-add" onClick={() => openModal1(result)}>
-                      <path className="secondary" fill-rule="evenodd" d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"/></svg>
+                    <div className="result-name" onClick={() => handlePoemClick(setPoem1, index)}>
+                    <p>{result.title}</p>
+                    <p>- {result.author}</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-information" onClick={() => openModal1(result)}><path className="primary" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/><path className="secondary" d="M11 12a1 1 0 0 1 0-2h2a1 1 0 0 1 .96 1.27L12.33 17H13a1 1 0 0 1 0 2h-2a1 1 0 0 1-.96-1.27L11.67 12H11zm2-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
                   </div>
                 ))}
               </div>
@@ -173,29 +181,31 @@ function Search(props) {
     )
   )}
       {poem1 && poem2 ? (
-        <div className='poem1-block' onClick={() => handleSecondPoemClick(setPoem2)}>
-          <p>{poem2.title}</p>
-          <p>by</p>
-          <p>{poem2.author}</p>
+        <div className='poem2-block'  id="selected"onClick={() => handleSecondPoemClick(setPoem2)}>
+        <p className='selected-poem-title'>{poem2.title}</p>
+        <p>by</p>
+        <p className='selected-poem-author'>{poem2.author}</p>
         </div>
       ) : (
         <div>
       {matchingPoems && !modalVisible2 && (
-        <div className='poem1-block'>
-          <h2  className='results-header'>Matching Poems</h2>
+        <div className='poem2-block'>
+          <h2  className='results-header'>Pick a matching poem</h2>
           <div className='search-results'>
             {matchingPoems.map((result, index) => (
               <div key={index} className='results'>
-                <p className="result-name" onClick={() => handlePoemClick(setPoem2, index)}>{result.title} by {result.author}</p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-add" onClick={() => openModal2(result)}>
-                  <path className="secondary" fill-rule="evenodd" d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"/></svg>
+                                    <div className="result-name" onClick={() => handlePoemClick(setPoem2, index)}>
+                    <p>{result.title}</p>
+                    <p>- {result.author}</p>
+                    </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-information" onClick={() => openModal2(result)}><path className="primary" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/><path className="secondary" d="M11 12a1 1 0 0 1 0-2h2a1 1 0 0 1 .96 1.27L12.33 17H13a1 1 0 0 1 0 2h-2a1 1 0 0 1-.96-1.27L11.67 12H11zm2-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
               </div>
             ))}
           </div>
         </div>
       )}
       {modalVisible2 && selectedResult2 && (
-        <div className='poem1-block'>
+        <div className='poem2-block'>
           <h2 className='results-header'>{selectedResult2.title} by {selectedResult2.author}</h2>
           <div className='search-results'>
           {selectedResult2.lines.map((line) => (
@@ -206,9 +216,6 @@ function Search(props) {
       )}
       </div>)}
       </div>
-      {combinedPoem && (
-        <CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>
-      )}
     </div>
   );  
 }
