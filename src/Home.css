@@ -1,6 +1,5 @@
 .home-title {
   font-size: 17vw;
-  margin: 10px
 }
 
 h2 {
@@ -16,10 +15,9 @@ section {
 
 .home-nav {
   text-decoration: none;
-  font-size: 5vw;
-  padding: 0.1em;
+  font-size: 4vw;
+  padding: 0.1rem;
   color: gray;
-  padding: 10px;
   transition: color 2s ease-out;
 }
 
@@ -42,14 +40,19 @@ section {
   }
 }
 
-svg .primary {
+.icon-book-open1 .primary {
   fill: black; /* Change the primary color to blue */
 }
 
-svg .secondary {
+.icon-book-open1 .secondary {
   fill: gray; /* Change the secondary color to red */
 }
 
 .icon-book-open1 {
   height: 5vw
+}
+
+.quote {
+  margin: .5rem;
+  font-size: 1.5vw;
 }

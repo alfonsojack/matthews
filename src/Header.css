@@ -48,3 +48,11 @@ header {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.icon-book-open .primary {
+  fill: black; /* Change the primary color to blue */
+}
+
+.icon-book-open .secondary {
+  fill: gray; /* Change the secondary color to red */
+}

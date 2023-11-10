@@ -2,25 +2,34 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .search-results {
   overflow: auto;
   border: 1px black solid;
-  max-height: 27em;
+  max-height: 25vh;
+  width: 23vw
 }
 
-.poem1-block {
+.poem1-block, .selected-poem-block {
   border: 1px black solid;
-  padding: 5px;
-  height: 50vh;
-  width: 30vw;
-  margin: 10px
+  padding: 1rem;
+  height: 40vh;
+  width: 33vw;
+  margin: 2rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .results {
   border: 1px black solid;
-  padding: 10px
+  padding: 10px;
+  font-size: .8em;
+  display: flex;
+  flex-direction: row;
 }
 
 .results:hover {
@@ -34,4 +43,56 @@
   padding: 5px;
   height: 50vh;
   width: 30vw;
+}
+
+.results-header {
+  font-size: 1em;
+  padding: .5rem;
+}
+
+form {
+  align-self: center;
+}
+
+/* Style for the select element within the form */
+.poem1-block select {
+  width: 30%; /* Full width */
+  padding: .1rem; /* Adjust padding as needed */
+  margin-bottom: 1rem; /* Add spacing between elements */
+  font-size: 1em;
+}
+
+/* Style for the input element within the form */
+.poem1-block input {
+  width: 30%; /* Full width */
+  padding: .1rem; /* Adjust padding as needed */
+  margin-bottom: 1rem; /* Add spacing between elements */
+  font-size: 1em;
+}
+
+/* Style for the button element within the form */
+.poem1-block button {
+  width: 30%; /* Full width */
+  padding: .1rem; /* Adjust padding as needed */
+  font-size: 1em;
+}
+
+.icon-add {
+  height: 2em;
+  justify-self: flex-end;
+}
+
+.icon-add .secondary {
+  fill: gray
+}
+.icon-add .secondary:hover {
+  fill: white;
+}
+
+.result-name {
+  width: 80%;
+  font-size: 1em;
+  justify-self: flex-start;
+  flex-basis: 1;
+  flex-grow: 1;
 }

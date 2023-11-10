@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/combine" element={<Search onDataTransfer={handleDataTransfer}/>} />
-        <Route path="/new-poem" element={<CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>} />
+        {/* <Route path="/new-poem" element={<CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>} /> */}
       </Routes>
     </div>
   );
