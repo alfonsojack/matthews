@@ -13,7 +13,7 @@ section {
   justify-content:flex-start;
 }
 * {
-font-family: 'Noto Serif Display', serif;
+/* font-family: 'Noto Serif Display', serif; */
 font-family: 'Playfair Display', serif;
 }
 
@@ -21,7 +21,7 @@ font-family: 'Playfair Display', serif;
 .home-nav {
   text-decoration: none;
   font-size: 4vw;
-  padding: 1rem;
+  padding: .6rem;
   color: gray;
   transition: color 2s ease-out;
 }
@@ -61,4 +61,15 @@ font-family: 'Playfair Display', serif;
 .quote {
   margin: .5rem;
   font-size: 1.5vw;
+  margin-bottom: 1rem;
+}
+
+#text {
+  color: black;
+  font-weight: 600;
+}
+
+#attribution {
+  font-size: 1.2vw;
+  color: gray
 }
