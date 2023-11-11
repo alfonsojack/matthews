@@ -28,7 +28,7 @@
 
 @media (max-width: 840px) {
   .combined-poem {
-    width: 100vw
+    width: 90vw;
   }
   .combined-poem-lines {
     font-size: 1em;

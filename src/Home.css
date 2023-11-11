@@ -82,5 +82,8 @@ font-family: 'Playfair Display', serif;
     color: gray;
     transition: color 2s ease-out;
   }
+  .quote, #attribution {
+    font-size: 4vw;
+  }
   
 }

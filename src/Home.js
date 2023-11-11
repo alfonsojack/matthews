@@ -14,7 +14,7 @@ function Home() {
     if (updatedLinks[index].originalText === 'Create') {
       updatedLinks[index].text = 'Create a new poem of any length';
     } else if (updatedLinks[index].originalText === 'About') {
-      updatedLinks[index].text = "What's all this about?";
+      updatedLinks[index].text = "What's all this?";
     } else if (updatedLinks[index].originalText === 'Combine') {
       updatedLinks[index].text = 'Mix two poems together';
     }

@@ -7,6 +7,7 @@ import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Create from './Create';
+import Error from './Error'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/combine" element={<Search/>} />
         <Route path="/create" element={<Create/>} />
+        <Route path='/*' element={<Error message="The page you're looking for doesn't exist."/>}/>
       </Routes>
     </div>
   );
