@@ -2,6 +2,7 @@ import './Search.css';
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import CombinedPoem from './CombinedPoem';
+import Error from './Error';
 
 function Search() {
   const [category, setCategory] = useState('title');
@@ -15,6 +16,7 @@ function Search() {
   const [selectedResult1, setSelectedResult1] = useState(null);
   const [modalVisible2, setModalVisible2] = useState(false);
   const [selectedResult2, setSelectedResult2] = useState(null);
+  const [fetchError, setFetchError] = useState(null)
 
   const openModal2 = (result) => {
     setSelectedResult2(result);
@@ -40,13 +42,14 @@ function Search() {
     try {
       const response = await fetch(`https://poetrydb.org/${category}/${searchInput}`);
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error(`${response.status}: ${response.message}`);
       }
       const data = await response.json();
       setSearchResults(data);
       console.log("SEARCH RESULTS", data)
     } catch (error) {
       console.error('Error:', error);
+      setFetchError(error.message)
     }
   };
 
@@ -55,13 +58,14 @@ function Search() {
       try {
         const response = await fetch(`https://poetrydb.org/linecount/${poem1.linecount}`);
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error(`${response.status}: ${response.message}`);
         }
         const data = await response.json();
         setMatchingPoems(data);
         console.log("Additional Data:", data);
       } catch (error) {
         console.error('Error:', error);
+        setFetchError(error.message)
       }
     }
   };
@@ -113,6 +117,9 @@ function Search() {
 
   return (
     <div className='Search'>
+    {fetchError && (
+        <Error error={fetchError}/>
+      )}
       {combinedPoem && (
         <CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>
       )}

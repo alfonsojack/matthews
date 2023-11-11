@@ -9,7 +9,7 @@ function About () {
       <p>Harry Matthews</p>
       </div>
       <div className="writing">
-        <h1 className='heading-about'>What is this?</h1>
+        <h1 className='heading-about'>What's all this?</h1>
         <p className='about-line' id='first-line'>Everyone hates poetry. Even the great poets hate poetry. </p>
         <p className='about-line'>From past legends like Marianne Moore to contemporary muckety-mucks like Ben Lerner, poets' disdain for their own craft is well documented.</p>
         <p className='about-line'>Luckily, in the 20th century, Harry Matthews and the Oulipo School pioneered the fusion of mathematics and literature, creating all sorts of algorithms and formulas for creating poetry.</p>
