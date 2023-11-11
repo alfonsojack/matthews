@@ -38,19 +38,20 @@ header {
 }
 
 .header-nav:hover {
-  color: black
+  color: #2f2f2f
 }
 
 .active-link {
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: #2f2f2f;
   padding-left: 10px;
   padding-right: 10px;
+  font-weight: 600;
 }
 
 .icon-book-open .primary {
-  fill: black; /* Change the primary color to blue */
+  fill: #2f2f2f; /* Change the primary color to blue */
 }
 
 .icon-book-open .secondary {

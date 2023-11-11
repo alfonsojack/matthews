@@ -6,7 +6,7 @@ import CombinedPoem from './CombinedPoem';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
-
+import Create from './Create';
 
 function App() {
   const [poem1, setPoem1] = useState(null);
@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/combine" element={<Search onDataTransfer={handleDataTransfer}/>} />
-        {/* <Route path="/new-poem" element={<CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem}/>} /> */}
+        <Route path="/create" element={<Create/>} />
       </Routes>
     </div>
   );

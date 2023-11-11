@@ -5,8 +5,8 @@
   overflow: auto;
   padding: 2vh;
   margin-top: 5vh;
-  align-items: flex-start;
-  justify-content: flex-start;
+  /* align-items: flex-start;
+  justify-content: flex-start; */
   /* background-color: black */
 }
 

@@ -61,7 +61,7 @@
 }
 
 .results:hover {
-  background-color: black;
+  background-color: #2f2f2f;
   color: white;
   cursor: pointer;
 }
@@ -136,7 +136,7 @@ form {
 }
 
 .icon-search .secondary {
-  fill: black
+  fill: #2f2f2f
 }
 
 .icon-search:hover {
@@ -156,7 +156,7 @@ form {
   cursor: pointer;
 }
 .icon-information:hover .secondary {
-  fill: black;
+  fill: #2f2f2f;
 }
 
 .result-name {
