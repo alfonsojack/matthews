@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import CombinedPoem from './CombinedPoem';
 
-function Search(props) {
+function Search() {
   const [category, setCategory] = useState('title');
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState(null);

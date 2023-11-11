@@ -3,4 +3,18 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 80vh;
+}
+
+.number-scroll {
+  font-size: 2rem;
+  justify-self: center;
+  margin-top: 2vh;
+  color: gray
+}
+
+.number-scroll:hover {
+  font-weight: 600;
+  cursor: pointer;
+  color: #2f2f2f;;
 }

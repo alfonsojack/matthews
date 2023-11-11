@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CombinedPoem from './CombinedPoem';
+import './Create.css'
 
 const Create = () => {
   const [randomNumber, setRandomNumber] = useState(null);
@@ -8,7 +9,7 @@ const Create = () => {
   const generateRandomNumber = () => {
     const newRandomNumber = Math.floor(Math.random() * (30 - 2 + 1)) + 2;
     setRandomNumber(newRandomNumber);
-    fetchRandomPoems(newRandomNumber)
+    fetchRandomPoems(newRandomNumber);
   };
 
   const fetchRandomPoems = (lineCount) => {
@@ -41,13 +42,18 @@ const Create = () => {
   return (
     <div className='Create-component'>
       {!randomNumber ? (
-        <div className="number-scroll" onClick={generateRandomNumber}>
+        <p className="number-scroll" onClick={generateRandomNumber}>
           Click here to create a poem
-        </div>
+        </p>
       ) : (
         <div className='poem'>
           {combinedPoem ? (
+            <div>
             <CombinedPoem combinedPoem={combinedPoem} />
+            <p className="number-scroll" onClick={generateRandomNumber}>
+            Create another
+          </p>
+          </div>
           ) : (
             <p>Loading...</p>
           )}

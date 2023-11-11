@@ -1,15 +1,20 @@
 import './CombinedPoem.css'
+// import PropTypes from 'prop-types';
 
-
-function CombinedPoem ({ poem1, poem2, combinedPoem}) {
+function CombinedPoem ({ combinedPoem }) {
   return (
     <div className='combined-poem'>
-      <h2 className='new-poem-title'>your new poem</h2>
+      <h2 className='new-poem-title'>Earth's Newest Poem</h2>
       {combinedPoem.map((line) => (
       <p className='combined-poem-lines'>{line}</p>
       ))}
     </div>
   )
 }
+
+
+// CombinedPoem.propTypes = {
+//   combinedPoem: PropTypes.arrayOf(PropTypes.string).isRequired,
+// };
 
 export default CombinedPoem
