@@ -25,3 +25,12 @@
   font-size: 1.5em;
   margin-bottom: 1vh;
 }
+
+@media (max-width: 840px) {
+  .combined-poem {
+    width: 100vw
+  }
+  .combined-poem-lines {
+    font-size: 1em;
+  }
+}

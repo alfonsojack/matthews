@@ -73,3 +73,14 @@ font-family: 'Playfair Display', serif;
   font-size: 1.5vw;
   color: gray
 }
+
+@media (max-width: 840px) {
+  .home-nav {
+    text-decoration: none;
+    font-size: 8vw;
+    padding: 3rem;
+    color: gray;
+    transition: color 2s ease-out;
+  }
+  
+}
