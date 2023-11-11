@@ -107,11 +107,6 @@ function Search() {
   };
 
 
-  const handleLinkClick = () => {
-    props.onDataTransfer(poem1, poem2, combinedPoem);
-  };
-
-
   const handleSecondPoemClick = (poem) => {
     poem(null)
   }
