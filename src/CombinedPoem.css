@@ -5,12 +5,13 @@
   overflow: auto;
   padding: 2vh;
   margin-top: 5vh;
-  /* align-items: flex-start;
-  justify-content: flex-start; */
+  align-items: flex-start;
+  justify-content: flex-start;
   /* background-color: black */
 }
 
 .combined-poem-lines {
+  color: #2f2f2f;
   font-size: 1.5em;
   font-weight: 600;
   padding: .5rem;
@@ -22,5 +23,5 @@
   font-weight: 400;
   color: gray;
   font-size: 1.5em;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }

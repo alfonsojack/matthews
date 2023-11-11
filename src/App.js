@@ -9,15 +9,6 @@ import About from './About';
 import Create from './Create';
 
 function App() {
-  const [poem1, setPoem1] = useState(null);
-  const [poem2, setPoem2] = useState(null);
-  const [combinedPoem, setCombinedPoem] = useState(null);
-
-  const handleDataTransfer = (data1, data2, combinedData) => {
-    setPoem1(data1);
-    setPoem2(data2);
-    setCombinedPoem(combinedData);
-  };
 
   const location = useLocation();
 
@@ -27,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/combine" element={<Search onDataTransfer={handleDataTransfer}/>} />
+        <Route path="/combine" element={<Search/>} />
         <Route path="/create" element={<Create/>} />
       </Routes>
     </div>
