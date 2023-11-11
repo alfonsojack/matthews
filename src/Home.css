@@ -1,0 +1,74 @@
+.home-title {
+  font-size: 17vw;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+}
+* {
+/* font-family: 'Noto Serif Display', serif; */
+font-family: 'Playfair Display', serif;
+}
+
+
+.home-nav {
+  text-decoration: none;
+  font-size: 4vw;
+  padding: .5rem;
+  color: gray;
+  transition: color 2s ease-out;
+}
+
+.home-nav span {
+  display: inline-block;
+  transition: transform 2s ease-in;
+}
+
+.home-nav:hover span {
+  animation: shrinkAndGrow .5s;
+  color: #2f2f2f
+}
+
+@keyframes shrinkAndGrow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.icon-book-open1 .primary {
+  fill: #2f2f2f; /* Change the primary color to blue */
+}
+
+.icon-book-open1 .secondary {
+  fill: gray; /* Change the secondary color to red */
+}
+
+
+.icon-book-open1 {
+  height: 5vw
+}
+
+.quote {
+  font-size: 1.5vw;
+  margin-bottom: 1rem;
+}
+
+#text {
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+#attribution {
+  font-size: 1.5vw;
+  color: gray
+}
