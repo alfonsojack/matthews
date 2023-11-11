@@ -13,6 +13,8 @@
   justify-content: center;
 }
 
+
+
 .search-results {
   overflow: auto;
   /* border: 1px black solid; */
@@ -187,4 +189,52 @@ form {
   font-size: 1.5em;
   font-weight: 400;
   color: gray;
+}
+
+@media (max-width: 840px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .poem1-block, .poem2-block, .selected-poem-block {
+    width: 50vw
+  }
+  form {
+    flex-direction: column;
+  }
+  .poem1-block select {
+    width: 80vw; /* Full width */
+    padding: .5rem; /* Adjust padding as needed */
+    margin-bottom: 1rem; /* Add spacing between elements */
+    font-size: 1.5em;
+    /* height: 1.5em; */
+    border: none;
+    text-align: center;
+  }
+  .poem1-block select {
+    cursor: pointer;
+  }
+  
+  /* Style for the input element within the form */
+  .poem1-block input {
+    width: 80vw; /* Full width */
+    padding: .5rem; /* Adjust padding as needed */
+    margin-bottom: 1rem; /* Add spacing between elements */
+    font-size: 1.5em;
+    height: 1.5em;
+    border: none;
+    padding-left: 0;
+    justify-self: center;
+    text-align: center;
+  }
+  .search-results {
+    overflow: auto;
+    /* border: 1px black solid; */
+    /* max-height: 25vh; */
+    width:80vw
+  }
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }

@@ -11,6 +11,7 @@ header {
   align-items: center;
   padding: 5px;
   color:#2f2f2f;
+  margin-bottom: 20px;
 }
 
 .header-logo {
@@ -57,4 +58,22 @@ header {
 
 .icon-book-open .secondary {
   fill: gray; /* Change the secondary color to red */
+}
+
+@media (max-width: 840px) {
+  .header-nav {
+    display: none;
+  }
+  .active-link {
+    display: none;
+  }
+  .header-title {
+    justify-self: center;
+    text-align: center;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
