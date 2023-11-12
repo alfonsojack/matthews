@@ -18,6 +18,9 @@ const Create = () => {
   
     return fetch(`https://poetrydb.org/linecount/${lineCount}/lines`)
       .then(response => {
+        if (response.status === 500) {
+          throw new Error('Poems not found for the specified line count');
+        }
         if (!response.ok) {
           throw new Error(`${response.status}: ${response.message}`);
         }

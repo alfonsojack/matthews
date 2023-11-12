@@ -38,10 +38,13 @@ a {
   text-decoration: none;
   color: #2f2f2f;
   font-weight: 600;
+  transition: font-weight 2s ease
 }
 
 a:hover {
   font-weight: 800;
+  transition: 2s;
+  transform: 2s;
 }
 
 .label {
@@ -67,4 +70,9 @@ a:hover {
   .about-line {
     margin-left: 0;
   }
+}
+
+a {
+  transition: 2s;
+  transform: 2s;
 }
