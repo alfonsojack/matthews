@@ -241,3 +241,13 @@ form {
   }
   
 }
+
+
+button {
+  background: none;
+  align-self: center;
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none; /* Remove the default focus style */
+} 
