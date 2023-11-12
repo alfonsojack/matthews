@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+<div align="center">
+  
+# Matthews Poetry Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
+##### Built With:
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+ <img src="https://shields.io/badge/react-black?logo=react&style=for-the-badge" />
 
-## Available Scripts
 
-In the project directory, you can run:
+##### Testing Technologies:
+Fully tested e2e with Cypress!
 
-### `npm start`
+  -----
+## Abstract:
+Welcome to Matthews
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app works in tandem with a poetry database to create new poetry based on the combination of two user selected poems or a larger combination of randomly selected poems in a database 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Preview of App: 
 
-### `npm test`
+<img width="1440" alt="Screenshot 2023-11-11 at 11 29 32 PM (2)" src="https://github.com/alfonsojack/matthews/assets/136117363/491df278-2918-4fc7-83d7-8815b70a8044">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1440" alt="Screenshot 2023-11-11 at 11 30 15 PM (2)" src="https://github.com/alfonsojack/matthews/assets/136117363/4c103f30-df6f-43db-b7ac-01b63d9c5136">
 
-### `npm run build`
+<img width="1440" alt="Screenshot 2023-11-11 at 11 28 50 PM (2)" src="https://github.com/alfonsojack/matthews/assets/136117363/b53f8edd-022f-4e23-9f10-813834932f59">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1440" alt="Screenshot 2023-11-11 at 11 30 48 PM (2)" src="https://github.com/alfonsojack/matthews/assets/136117363/6f9d374f-991e-4ed2-9344-debc635dce76">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Jack Alfonso](https://github.com/alfonsojack) 
 
-### `npm run eject`
+## Context:
+This is the final solo project of Mod 3 at Turing School of Software & Design. I was given ~1 week to create this project from scratch using my existing knowledge of React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Learning Goals:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Continue working with React fundamentals
+- Test React components & asynchronous JS
+- Test user flows using cypress e2e testing
+- Create a multi-page UX using Router
