@@ -17,13 +17,11 @@
 
 .search-results {
   overflow: auto;
-  /* border: 1px black solid; */
   max-height: 25vh;
   width: 23vw
 }
 
 .poem1-block, .poem2-block, .selected-poem-block {
-  /* border: 1px black solid; */
   padding: 1rem;
   height: 40vh;
   width: 33vw;
@@ -34,25 +32,6 @@
   justify-content: baseline;
 }
 
-/* .poem1-block {
-  border: 5px blue solid
-}
-
-.poem2-block {
-  border: 5px red solid
-} */
-
-/* #selected {
-  background-color: black;
-} */
-
-/* .poem1-block {
-  background-color: blue;
-}
-
-.poem2-block {
-  background-color: red;
-} */
 
 .results {
   border-bottom: 1px #2f2f2f solid;
@@ -68,12 +47,6 @@
   cursor: pointer;
 }
 
-/* .poem2-block {
-  border: 1px black solid;
-  padding: 5px;
-  height: 50vh;
-  width: 30vw;
-} */
 
 .results-header {
   font-size: 1em;
@@ -90,7 +63,6 @@ form {
   align-items: baseline;
 }
 
-/* Style for the select element within the form */
 .poem1-block select {
   width: 30%; /* Full width */
   padding: .5rem; /* Adjust padding as needed */
@@ -103,10 +75,10 @@ form {
   cursor: pointer;
 }
 
-/* Style for the input element within the form */
+
 .poem1-block input {
-  width: 10vw; /* Full width */
-  padding: .5rem; /* Adjust padding as needed */
+  width: 10vw;
+  padding: .5rem; 
   margin-bottom: 1rem; /* Add spacing between elements */
   font-size: 1.5em;
   height: 1.5em;
@@ -115,7 +87,6 @@ form {
   justify-self: center;
 }
 
-/* Style for the button element within the form */
 
 .icon-search {
   height: 1.5em;
@@ -126,7 +97,7 @@ form {
 }
 
 .icon-search:hover {
-  transform: scale(1.1); /* Increase the size on hover */
+  transform: scale(1.1); 
 }
 
 .icon-search:active {
@@ -172,11 +143,11 @@ form {
 
 
 .icon-information .primary {
-  fill: gray; /* Change the primary color to blue */
+  fill: gray; 
 }
 
 .icon-information .secondary {
-  fill: white; /* Change the secondary color to red */
+  fill: white; 
 }
 
 .selected-poem-title {
@@ -202,11 +173,10 @@ form {
     flex-direction: column;
   }
   .poem1-block select {
-    width: 80vw; /* Full width */
-    padding: .5rem; /* Adjust padding as needed */
-    margin-bottom: 1rem; /* Add spacing between elements */
+    width: 80vw; 
+    padding: .5rem;
+    margin-bottom: 1rem; 
     font-size: 1.5em;
-    /* height: 1.5em; */
     border: none;
     text-align: center;
   }
@@ -214,11 +184,11 @@ form {
     cursor: pointer;
   }
   
-  /* Style for the input element within the form */
+
   .poem1-block input {
-    width: 80vw; /* Full width */
-    padding: .5rem; /* Adjust padding as needed */
-    margin-bottom: 1rem; /* Add spacing between elements */
+    width: 80vw; 
+    padding: .5rem; 
+    margin-bottom: 1rem; 
     font-size: 1.5em;
     height: 1.5em;
     border: none;
@@ -228,8 +198,6 @@ form {
   }
   .search-results {
     overflow: auto;
-    /* border: 1px black solid; */
-    /* max-height: 25vh; */
     width:80vw
   }
   .results {

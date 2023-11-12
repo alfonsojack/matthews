@@ -38,13 +38,13 @@ a {
   text-decoration: none;
   color: #2f2f2f;
   font-weight: 600;
-  transition: font-weight 2s ease
+  transition: font-weight .3s ease
 }
 
 a:hover {
   font-weight: 800;
-  transition: 2s;
-  transform: 2s;
+  transition: .3s;
+  transform: .3s;
 }
 
 .label {
@@ -73,6 +73,6 @@ a:hover {
 }
 
 a {
-  transition: 2s;
-  transform: 2s;
+  transition: .3s;
+  transform: .3s;
 }

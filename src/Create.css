@@ -10,7 +10,8 @@
   font-size: 2rem;
   justify-self: center;
   margin-top: 2vh;
-  color: gray
+  color: gray;
+  transition: .3s;
 }
 
 .number-scroll:hover {
