@@ -1,3 +1,7 @@
+.Home {
+  animation: fadeIn 1s;
+}
+
 .home-title {
   font-size: 17vw;
   color: #2f2f2f;

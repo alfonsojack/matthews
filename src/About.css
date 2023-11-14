@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   margin: 5rem;
-  color: #2f2f2f
+  color: #2f2f2f;
+  animation: fadeIn 1s;
 }
 .heading-about {
   color: #2f2f2f
@@ -20,7 +21,7 @@
   width: 50vw;
   display: flex;
   flex-direction: column;
-  color: #2f2f2f
+  color: #2f2f2f;
 
 }
 
@@ -32,6 +33,7 @@
 
 #first-line {
   font-weight: 600;
+  margin-top: 3rem;
 }
 
 a {
@@ -75,4 +77,10 @@ a:hover {
 a {
   transition: .3s;
   transform: .3s;
+}
+
+#text-quote {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: .5rem
 }
