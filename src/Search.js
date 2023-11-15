@@ -126,8 +126,7 @@ function Search() {
   return (
     <div className='Search'>
       {fetchError && <Error error={fetchError} />}
-      {combinedPoem && <CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem} />}
-      
+      {combinedPoem && <CombinedPoem poem1={poem1} poem2={poem2} combinedPoem={combinedPoem} setCombinedPoem={setCombinedPoem}/>}
       <div className='search-container'>
         {modalVisible1 && selectedResult1 ? (
           <div className='poem1-block'>

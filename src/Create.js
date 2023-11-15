@@ -6,7 +6,8 @@ import Error from './Error';
 const Create = () => {
   const [randomNumber, setRandomNumber] = useState(null);
   const [combinedPoem, setCombinedPoem] = useState(null);
-  const [fetchError, setFetchError] = useState(null)
+  const [fetchError, setFetchError] = useState(null);
+  
 
   const generateRandomNumber = () => {
     const newRandomNumber = Math.floor(Math.random() * (30 - 2 + 1)) + 2;
@@ -58,7 +59,7 @@ const Create = () => {
         <div className='poem'>
           {combinedPoem && !fetchError ? (
             <div>
-              <CombinedPoem combinedPoem={combinedPoem} />
+              <CombinedPoem combinedPoem={combinedPoem} setCombinedPoem={setCombinedPoem} />
               <p className="number-scroll" onClick={generateRandomNumber}>
                 Create another
               </p>
