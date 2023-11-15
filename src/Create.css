@@ -4,6 +4,7 @@
   justify-content: center;
   width: 100vw;
   height: 80vh;
+  animation: fadeIn 1s;
 }
 
 .number-scroll {
@@ -18,4 +19,8 @@
   font-weight: 600;
   cursor: pointer;
   color: #2f2f2f;;
+}
+
+.number-scroll:active {
+  font-weight: 800;
 }
