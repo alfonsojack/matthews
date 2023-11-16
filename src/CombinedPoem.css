@@ -7,7 +7,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   /* background-color: black */
-  animation: fadeIn .5s;
+  animation: fadeIn 1s;
   scrollbar-color: #2f2f2f;
   scroll-margin: #f5f5f5;
   /* scrollbar-track-color: #f5f5f5; */
@@ -21,6 +21,15 @@
   align-items: flex-start;
   animation: fadeIn 1s;
   /* color: white; */
+}
+
+@keyframes dropDown {
+  from {
+    height: 0%
+  }
+  to {
+    height: 100%
+  }
 }
 
 .combined-poem-lines {
@@ -56,4 +65,10 @@
   background-color: #2f2f2f;
   color: #f5f5f5;
   transition: .5s;
+}
+
+.hovered:active {
+  font-weight: 800;
+  transition: .5s;
+  background-color: #f5f5f5;
 }

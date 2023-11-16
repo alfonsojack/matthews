@@ -19,7 +19,17 @@
 .search-results {
   overflow: auto;
   max-height: 25vh;
-  width: 23vw
+  width: 23vw;
+  animation: dropDown 1s;
+}
+
+@keyframes dropDown {
+  from {
+    height: 0%
+  }
+  to {
+    height: 100%
+  }
 }
 
 .poem1-block, .poem2-block, .selected-poem-block {
@@ -47,6 +57,11 @@
   background-color: #2f2f2f;
   color: #f5f5f5;
   cursor: pointer;
+}
+
+.results:active p {
+  font-weight: 800;
+  transition: .5s;
 }
 
 
